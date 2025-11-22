@@ -10,4 +10,3 @@ services:
     environment:
       - TZ=UTC
       - DATA_DIR=/app/data
-    user: "1000:1000"
