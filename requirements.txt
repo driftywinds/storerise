@@ -1,0 +1,5 @@
+python-telegram-bot
+aiohttp
+apprise
+python-dotenv
+python-telegram-bot[job-queue]

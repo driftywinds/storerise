@@ -1,0 +1,13 @@
+services:
+  appstore-monitor:
+    image: ghcr.io/driftywinds/storerise
+    container_name: storerise
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=UTC
+      - DATA_DIR=/app/data
+    user: "1000:1000"
